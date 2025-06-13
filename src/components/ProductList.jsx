@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from 'react-router';
+import EditProduct from "./EditProduct";
 
 function ProductList() {
     const [products, setProducts] = useState([]);
@@ -31,7 +32,7 @@ function ProductList() {
 
     if (loading) return <p>Loading products...</p>;
     if (error) return <p>{error}</p>;
-
+    
     return (
         <>
             <Container>
