@@ -38,6 +38,8 @@ function ProductDetails() {
                     <Card.Title>{product.title}</Card.Title>
                     <Card.Text>{product.description}</Card.Text>
                     <Card.Text>${product.price}</Card.Text>
+                    <Card.Text>Category: {product.category}</Card.Text>
+                <a href= {`/editproduct/${id}`}>Edit</a>
                 </Card.Body>
             </Card>
         </Container>
